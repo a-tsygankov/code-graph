@@ -1,24 +1,69 @@
-# Compiled class file
-*.class
-
-# Log file
+# ---- General ----
+.DS_Store
+Thumbs.db
 *.log
+*.tmp
+*.bak
+*.swp
+*.swo
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# ---- Java / Gradle ----
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+cmake-build-*/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# ---- Node / JS / TS ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+.vscode/
+
+# Angular
+.angular/
+.angular/cache/
+angular.log
+
+# TypeScript
+*.tsbuildinfo
+
+# ---- Logs ----
+logs/
+*.log
+log-*.txt
+
+# ---- OS / Editor ----
+*.orig
+*.rej
+*~
+.vscode/
+*.code-workspace

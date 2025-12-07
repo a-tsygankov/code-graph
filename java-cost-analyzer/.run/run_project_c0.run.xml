@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run_project_c0" type="GradleRunConfiguration" factoryName="Gradle">
+    <ExternalSystemSettings>
+      <option name="externalProjectPath" value="$PROJECT_DIR$" />
+      <option name="externalSystemIdString" value="GRADLE" />
+      <option name="taskNames">
+        <list>
+          <option value="run" />
+        </list>
+      </option>
+      <option name="scriptParameters" value="--args &quot;/Users/antsygankov/repos/newton/project /Users/antsygankov/repos/newton/run_project_c0.toon 0&quot;" />
+      <option name="vmOptions" value="" />
+    </ExternalSystemSettings>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

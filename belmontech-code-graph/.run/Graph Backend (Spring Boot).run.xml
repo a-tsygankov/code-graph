@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Graph Backend (Spring Boot)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="belmonttech-code-graph.graph-backend.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.belmonttech.graph.backend.Application" />
+    <option name="VM_PARAMETERS" value="-Dtoon.file=$PROJECT_DIR$/data/costs-service.toon" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/graph-backend" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

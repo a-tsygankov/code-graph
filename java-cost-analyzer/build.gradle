@@ -1,0 +1,47 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+group = 'com.belmonttech'
+version = '1.0.0'
+
+repositories {
+  mavenCentral()
+}
+
+def JP = "3.27.1"
+
+dependencies {
+  // Pin ALL JavaParser artifacts to the same version
+  implementation "com.github.javaparser:javaparser-core:${JP}"
+  implementation "com.github.javaparser:javaparser-symbol-solver-core:${JP}"
+
+  constraints {
+    implementation "com.github.javaparser:javaparser-symbol-solver-model:${JP}"
+    implementation "com.github.javaparser:javaparser-symbol-solver-logic:${JP}"
+  }
+}
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+
+application {
+  // Your main
+  mainClass = 'com.belmonttech.analysis.JavaCostAnalyzer'
+}
+
+tasks.withType(JavaCompile).configureEach {
+  options.encoding = 'UTF-8'
+  // Disable incremental for now to avoid any stale issues while stabilizing
+  options.incremental = false
+}
+
+tasks.jar {
+  manifest {
+    attributes 'Main-Class': 'com.belmonttech.analysis.JavaCostAnalyzer'
+  }
+}

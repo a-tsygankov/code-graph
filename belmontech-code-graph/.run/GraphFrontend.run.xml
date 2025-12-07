@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="Graph Frontend (Vite)" type="JavaScriptDebugType">
+    <option name="url" value="http://localhost:5173" />
+    <method v="2"><option name="Make" enabled="false"/></method>
+  </configuration>
+</component>

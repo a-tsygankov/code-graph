@@ -1,2 +1,5 @@
-rootProject.name = "belmonttech-code-graph"
-include("graph-model", "graph-backend", "graph-frontend")
+rootProject.name = "belmontech-code-graph"
+
+include("graph-backend")
+include("graph-frontend")
+include("graph-model")
